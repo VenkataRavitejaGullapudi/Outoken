@@ -20,6 +20,10 @@ function App() {
 
 
   const verifyConnectionAndAgent = async () => {
+    if(!((window as any).ic && (window as any).ic.plug)){
+      setLoading(false)
+      return
+    }
     const connected = await (window as any).ic.plug.isConnected();
     setPlugConnected(connected);
     if (connected && !(window as any).ic.plug.agent) {
@@ -67,7 +71,7 @@ function App() {
         </React.Fragment>} />
     </Routes>
     <div className='footer'>
-        <div>© Designed and Developed by <a href='https://venkataravitejagullapudi.github.io/'>Raviteja</a> in IC network ♾️.</div>
+        <div>© Designed and Developed by <a href='https://venkataravitejagullapudi.github.io/'>Raviteja</a> on IC network ♾️.</div>
     </div>
 
   </React.Fragment>;
