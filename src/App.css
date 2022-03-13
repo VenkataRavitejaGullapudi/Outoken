@@ -1,0 +1,186 @@
+.App {
+    font-family: 'Poppins', sans-serif;
+    min-height: 80vh;
+}
+
+button {
+    font-size: calc(10px + 2vmin);
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resources>* {
+    margin: 0px;
+}
+
+.resources>input {
+    min-width: 70vw;
+    min-height: 22px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 2px;
+}
+
+.resources>button {
+    background: rgb(0, 22, 14);
+    margin: 2px;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.line {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* Header starts */
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 1px 0px 8px 4px rgb(117, 117, 119);
+}
+
+.title {
+    font-family: 'Cookie', cursive;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    font-size: calc(30px + 2vmin);
+    padding: 0px 30px;
+    color: rgb(0, 28, 105)
+}
+
+.logoutbtn {
+    font-size: calc(7px + 2vmin);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu>* {
+    margin: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu>*:hover {
+    text-decoration: underline;
+}
+
+
+/* Header ends */
+
+.principalId {
+    display: flex;
+    font-weight: 500;
+    padding: 20px 20px;
+    flex-direction: column;
+}
+
+.mintComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.mintComponent>img {
+    width: 60vmin;
+    border-radius: 20px;
+}
+
+.mintComponent>button {
+    background: #000;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mintComponent>button:hover {
+    box-shadow: 1px 0px 8px 4px rgb(117, 117, 119);
+}
+
+.mintComponent>button:disabled {
+    background: rgb(119, 117, 117);
+}
+
+.mintComponent>div {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.blockscreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 76, 100, 0.363);
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.blockscreen>div {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.loginpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-size: 25px;
+    padding: 10px 10vw;
+    text-align: center;
+}
+
+.loginpage>button>div {
+    font-size: 30px;
+}
+
+.loginpage>button {
+    padding: 10px 15px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(8, 6, 8);
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.footer>div>a {
+    color: bisque;
+}
